@@ -17,6 +17,9 @@ data_folder = 'data';
 % Experiment 3: quadrotor flip
 dataset = 'flip.mat';
 
+% Experiment 4: building
+%dataset = 'building.mat';
+
 % load data
 events = loadEvents([data_folder, '/', dataset]);
 
@@ -41,10 +44,8 @@ events_with_lifetime = calcVelocity(events, N, epsilon, mu, reg, vis);
 % visualization parameter for lifetime
 if strcmp(dataset, 'flip.mat')
     cmax = 500;
-elseif strcmp(dataset, 'stripes.mat') || strcmp(dataset, 'garfield.mat')
-    cmax = 14000;
 else
-    cmax = 10000;
+    cmax = 14000;
 end
 
 % video using lifetime
