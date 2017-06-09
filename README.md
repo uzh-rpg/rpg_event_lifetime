@@ -19,6 +19,7 @@ The source code is released under a GNU General Public License (GPL).
 Please run the file `matlab/main.m`.
 
 It computes the lifetime of each events and creates a video with sharp renderings and, as comparison, another video using a fixed integration time.
+Sample data is included in this repository.
 
 
 ## Publication
