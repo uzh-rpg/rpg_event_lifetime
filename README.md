@@ -1,9 +1,11 @@
 # Event Lifetime
 
-The event lifetime is an estimate for how long a gradient causing an event is visible by the pixel.
-This algorithm augments each event with its lifetime, which is computed from the event's velocity on the image plane.
+The lifetime of an event is the time that it takes for the moving brightness gradient causing the event to travel a distance of 1 pixel.
+The provided algorithm augments each event with its lifetime, which is computed from the event's velocity on the image plane.
 The generated stream of augmented events gives a continuous representation of events in time, hence enabling the design of new algorithms that outperform those based on the accumulation of events over fixed, artificially-chosen time intervals.
 A direct application of this augmented stream is the construction of sharp gradient (edge-like) images at any time instant.
+
+![building](https://user-images.githubusercontent.com/670994/27136305-48c4b81c-511b-11e7-8256-ac7288b24783.png)
 
 For more details, please read our [ICRA'15 paper](http://rpg.ifi.uzh.ch/docs/ICRA15_Mueggler.pdf).
 
